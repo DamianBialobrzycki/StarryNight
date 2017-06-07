@@ -33,7 +33,7 @@ namespace StarryNight.View
             Canvas.SetTop(control, y);
         }
 
-        public static void MakeElementOnCanvas(UIElement uiElement, double toX, double toY)
+        public static void MoveElementOnCanvas(UIElement uiElement, double toX, double toY)
         {
             double fromX = Canvas.GetLeft(uiElement);
             double fromY = Canvas.GetTop(uiElement);

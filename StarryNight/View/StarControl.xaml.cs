@@ -15,6 +15,7 @@ using System.Windows.Shapes;
 
 namespace StarryNight.View
 {
+    using System.Windows.Media.Animation;
     /// <summary>
     /// Logika interakcji dla klasy StarControl.xaml
     /// </summary>
@@ -25,6 +26,16 @@ namespace StarryNight.View
             InitializeComponent();
         }
 
+        public void FadeIn()
+        {
+            Storyboard fadeInStoryboard = FindResource("fadeInStoryboard") as Storyboard;
+            fadeInStoryboard.Begin();
+        }
 
+        public void FadeOut()
+        {
+            Storyboard fadeOutStoryboard = FindResource("fadeOutStoryboard") as Storyboard;
+            fadeOutStoryboard.Begin();
+        }
     }
 }

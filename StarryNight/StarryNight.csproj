@@ -56,6 +56,7 @@
     </ApplicationDefinition>
     <Compile Include="Model\Bee.cs" />
     <Compile Include="Model\BeeMovedEventArgs.cs" />
+    <Compile Include="Model\BeeStarModel.cs" />
     <Compile Include="Model\Star.cs" />
     <Compile Include="Model\StarChangedEventArgs.cs" />
     <Compile Include="ViewModel\BeeStarViewModel.cs" />

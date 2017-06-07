@@ -6,10 +6,10 @@
              xmlns:local="clr-namespace:StarryNight.View"
              mc:Ignorable="d" 
              d:DesignHeight="100" d:DesignWidth="150">
-    <UserControl>
+    
         <UserControl.Resources>
             <Storyboard x:Key="fadeInStoryboard">
-                <DoubleAnimation From="0" To="1" Storyboard.TargetName="sarPolygon"
+                <DoubleAnimation From="0" To="1" Storyboard.TargetName="starPolygon"
                                  Storyboard.TargetProperty="Opacity" Duration="0:0:1.5"/>
             </Storyboard>
             <Storyboard x:Key="fadeOutStoryboard">
@@ -19,10 +19,9 @@
         </UserControl.Resources>
 
 
-        <Grid>
-            <Polygon Points="0,75 75,0 100,100 0,25 150,25" Fill="Snow"
+    <Grid>
+        <Polygon Points="0,75 75,0 100,100 0,25 150,25" Fill="Snow"
                      Stroke="Black" x:Name="starPolygon"/>
-        </Grid>
-    </UserControl>
+    </Grid>
 
 </UserControl>
